@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="styles.css" rel="stylesheet" />
+  <title>Weather App</title>
+</head>
+<body>
+  <main>
+    <section id="weather-wrapper" aria-labelledby="weather-heading">
+      <h1 id="weather-heading">Weather App</h1>
+      <div id="weather-search">
+        <label for="search" class="sr-only">City Search</label>
+        <input id="search" type="text" placeholder="Search by city" aria-placeholder="Search by city" aria-required="true" />
+        <input id="submit" type="submit" onclick="fetchWeather()" value="Search" aria-label="Search Button" />
+      </div>
+      <div id="weather-data" style="display: none;" role="region" aria-live="polite"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
